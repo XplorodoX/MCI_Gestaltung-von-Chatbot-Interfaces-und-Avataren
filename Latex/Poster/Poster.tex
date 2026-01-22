@@ -1,0 +1,300 @@
+\documentclass[final]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+% size=a3, orientation=landscape
+% scale=1.4 sorgt dafür, dass die Schrift im Verhältnis zum A3-Blatt groß genug ist
+\usepackage[orientation=landscape,size=a3,scale=1.4]{beamerposter}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{media9}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+
+% Hyperlinks
+\hypersetup{colorlinks=true,linkcolor=headerblue,citecolor=headerblue,urlcolor=headerblue}
+
+% Bibliographie - kompakt für Poster
+\usepackage[backend=biber,style=numeric-comp,sorting=none,maxnames=1,giveninits=true]{biblatex}
+\addbibresource{MeineBibliothek.bib}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+% Referenzen kompakter machen, aber DOI als klickbaren Link behalten
+\renewcommand*{\bibfont}{\tiny}
+\setlength{\bibitemsep}{0pt}
+\setlength{\bibnamesep}{0pt}
+\setlength{\bibinitsep}{0pt}
+\DeclareFieldFormat{title}{}
+\DeclareFieldFormat{journaltitle}{}
+\DeclareFieldFormat{booktitle}{}
+\DeclareFieldFormat{doi}{\href{https://doi.org/#1}{[Link]}}
+\DeclareFieldFormat{url}{\href{#1}{[Link]}}
+\DeclareFieldFormat{eprint:arxiv}{\href{https://arxiv.org/abs/#1}{[Link]}}
+\AtEveryBibitem{
+  \iffieldundef{doi}{}{\clearfield{url}} % URL nur zeigen, wenn DOI fehlt
+  \clearfield{note}\clearfield{pages}\clearfield{volume}\clearfield{number}
+}
+
+% --- Horizontal Bibliography ---
+\newcounter{bibcount}
+\defbibenvironment{bibliography}
+  {\setcounter{bibcount}{0}%
+   \raggedright}
+  {}
+  {\stepcounter{bibcount}%
+   \ifnum\value{bibcount}>1 \unspace, \fi % Komma zwischen Einträgen
+   \printtext[labelnumberwidth]{%
+     \printfield{labelprefix}%
+     \printfield{labelnumber}}%
+   \addspace}
+\renewcommand*{\finentrypunct}{} % Kein Punkt am Ende des Eintrags
+
+% --- Farben des Original-Posters ---
+\definecolor{headerblue}{RGB}{0, 102, 178} 
+\definecolor{linegrey}{RGB}{220, 220, 220} 
+
+% --- Beamer Style Einstellungen für Lesbarkeit ---
+\setbeamercolor{block title}{fg=headerblue,bg=white}
+\setbeamercolor{block body}{fg=black,bg=white}
+\setbeamerfont{block title}{size=\large,series=\bfseries}
+\setbeamerfont{block body}{size=\normalsize}
+
+% Trennlinie (kann noch innerhalb von Spalten genutzt werden, falls nötig)
+\newcommand{\posterrule}{\vspace{0.4cm} \hrule height 1pt \color{linegrey} \vspace{0.4cm}}
+
+% --- FOOTER EINSTELLUNG (OPTIMIERT) ---
+\setbeamertemplate{footline}{
+    % ht= Höhe der Box, dp= Abstand zum unteren Papierrand
+    \begin{beamercolorbox}[wd=\paperwidth,ht=4ex,dp=3ex,leftskip=2cm,rightskip=2cm]{structure}
+        \color{black}
+         % Schrift deutlich vergrößert (statt scriptsize)
+        
+        % Inhalt mit hfill für perfekte Links-Mitte-Rechts Ausrichtung
+        Hochschule Aalen 
+        \hfill 
+        \today
+        \hfill 
+        Fortgeschrittene Mensch-Computer-Interaktion
+    \end{beamercolorbox}
+}
+
+\begin{document}
+\begin{frame}[t]
+
+% --- HEADER ---
+\begin{columns}[T]
+    \begin{column}{.2\textwidth}
+        \includegraphics[width=\textwidth]{Hochschule-aalen.svg.png} 
+    \end{column}
+    \begin{column}{.6\textwidth}
+        \centering
+        \huge \textbf{Gestaltung von Chatbot-Interfaces und Avataren} \\
+        \small
+        Jan Herbst (82784) | Gabriel Roth (82798) | Florian Merlau (81775)
+
+
+
+    \end{column}
+    \begin{column}{.2\textwidth}
+        \flushright
+        \quad % Platz für QR-Code
+    \end{column}
+\end{columns}
+
+\vspace{1cm}
+
+% --- HAUPTINHALT ---
+\begin{columns}[T]
+    % --- SPALTE 1 ---
+    \begin{column}{.31\textwidth}
+        % Blau markierte Box (Forschungsfrage)
+        \setbeamercolor{block title}{fg=white,bg=headerblue}
+        \setbeamercolor{block body}{fg=black,bg=gray!10}
+        \begin{block}{1 Forschungsfrage}
+            Wie sollten Chatbot-Interfaces und Avatare gestaltet werden, um Nutzererfahrung, Vertrauen und Interaktionsqualität zu optimieren?
+        \end{block}
+        
+        \vfill % Dehnt den Raum zwischen den Blöcken
+        
+        \setbeamercolor{block title}{fg=headerblue,bg=white}
+        \setbeamercolor{block body}{fg=black,bg=white}
+        
+        \begin{block}{2 Definition \& Funktionsweise von Chatbots}
+            \begin{itemize}
+                \item \textbf{Definition:} Computerprogramme zur dialogischen Kommunikation (textuell/auditiv).
+                \item \textbf{Typen:}
+                \begin{itemize}
+                    \item \textit{Ohne KI:} Starre Menü-Navigation (Regelbasiert).
+                    \item \textit{Konversationelle KI:} Verarbeitet Fragen mittels NLU.
+                    \item \textit{Generative KI:} Basierend auf LLMs für flexible Inhalte.
+                    \item \textit{Virtuelle Agenten:} Kombination aus KI, Deep Learning \& RPA.
+                \end{itemize}
+                \item \textbf{Entwicklung:} Von einfachen FAQ-Systemen $\rightarrow$ Regelbasierte Systeme $\rightarrow$ KI-Chatbots mit natürlichem Sprachverständnis.
+                \item \textbf{Moderne Fähigkeiten:} Kontextverständnis, Fehlerkorrektur (Tippfehler), hohe Vielseitigkeit.
+            \end{itemize}
+        \end{block}
+
+
+         \vfill
+
+        
+
+        
+        \begin{block}{3 Soziotechnische Gestaltung \& Soziale Signale}
+            \begin{itemize}
+                \item \textbf{Gestaltung:} Erfolg hängt von technischer Funktionalität UND sozialen Faktoren ab.
+                \item \textbf{Soziale Signale:} Werden unterbewusst wahrgenommen und fördern Beziehung.
+                \begin{itemize}
+                    \item \textit{Typen:} Verbale (Inhalt), Auditive (Laute), Visuelle (Aussehen/Bewegung), Unsichtbare.
+                \end{itemize}
+                \item \textbf{Visueller Einfluss:} Lächelnde Avatare verlängern Interaktion; Smalltalk prägt Persönlichkeit.
+            \end{itemize}
+        \end{block}
+
+        \vfill
+
+        \begin{block}{4 Soziale Reaktionen}
+            \begin{itemize}
+                \item \textit{Social Actor:} Chatbots werden unbewusst als soziale Akteure wahrgenommen.
+                \item \textit{Folge:} Nutzer übertragen zwischenmenschliche Verhaltensmuster (z.B. Höflichkeit) auf den Bot.
+            \end{itemize}
+            
+            \vspace{0.2cm}
+            \centering
+            \includegraphics[width=\linewidth]{soziale_Reaktionen.pdf}
+            \par\vspace{0.1cm}
+            \textit{\footnotesize Abbildung 1: Soziale Reaktionen. Darstellung nach \cite{Gnewuch2020}.}
+        \end{block}
+
+    \end{column}
+
+    % --- SPALTE 2 ---
+    \begin{column}{.31\textwidth}
+    	
+
+
+        
+        \vfill
+
+        \begin{block}{5 Stimmengestaltung}
+            \begin{itemize}
+                  \item Je menschlicher eine Computerstimme klingt, desto sympathischer und angenehmer wird sie wahrgenommen.
+                  \item \textbf{Erwartung:} Bei einer täuschend echten Stimme erwarten Nutzer oft auch ein intelligenteres Gesprächsniveau.
+                  \item \textbf{Lebendigkeit:} Natürliche Schwankungen in der Tonhöhe machen die Stimme freundlicher als eine monotone Sprechweise.
+            \end{itemize}
+        \end{block}
+
+
+
+        \vfill
+
+        \begin{block}{6 Chatbot-Avataren}
+            \begin{itemize}
+                \item \textbf{Gestaltung:} Beeinflusst Vertrauen, Kompetenz und Wohlbefinden der Nutzer.
+                \item \textbf{Kontextabhängigkeit:}
+                \begin{itemize}
+                    \item \textit{Professionell:} Reduzierte, technische Avatare bevorzugt.
+                    \item \textit{Informell:} Menschliche Darstellungen verbessern Eindruck.
+                \end{itemize}
+            \end{itemize}
+
+            \vspace{0.3cm}
+            \centering
+            % 2x2 Bilder-Grid verschieben über 7 und Kapitel 7 entfernen
+            \begin{tabular}{cc}
+                \includegraphics[height=5.5cm]{ChatGPT_logo.svg.png} &
+                \includegraphics[height=5.5cm]{Poster/dd.png} \\[0.2cm]
+                \includegraphics[height=5.5cm]{Poster/facereal.png} &
+                \includegraphics[height=5.5cm]{Poster/Real.png}
+            \end{tabular}
+            \par\vspace{0.1cm}
+            \textit{\footnotesize Abbildung 2: Erscheinungsformen. Eigene Darstellung. \cite{ChatGPTLogoWikipedia}}
+            \vspace{0.3cm}
+            \begin{itemize}
+                \item \textbf{Anthropomorphismus:} Übertragung menschlicher Eigenschaften auf Avatare erzeugt Nähe und Vertrauen.
+                \item \textbf{Realitätsgrad:} Beeinflusst Nutzererfahrung maßgeblich.
+                \item \textbf{Uncanny Valley:} Fast-menschliche Avatare wirken oft unheimlich oder irritierend.
+                \item \textbf{Erwartungshaltung:} Hochrealistische Avatare wecken Erwartungen an echte menschliche Interaktion.
+            \end{itemize}
+        \end{block}
+  
+    \end{column}
+
+    % --- SPALTE 3 ---
+    \begin{column}{.31\textwidth}
+        \begin{block}{7 Interface-Positionierung}
+        \begin{itemize}
+            \item \textbf{Fokus:} Text/Steuerung primär, Avatar sekundär.
+            \item \textbf{Empfehlung:} Avatar peripher (seitlich) statt zentral/dominant.
+            \item \textbf{Risiko:} Zentral + Blickkontakt $\rightarrow$ Ablenkung/sozialer Druck.
+        \end{itemize}
+        \vspace{0.15cm}
+        \centering
+
+            
+            \vspace{0.2cm}
+            \centering
+            \includegraphics[width=0.7\linewidth]{Poster/Avatare.pdf}
+            \par\vspace{0.1cm}
+            \textit{\footnotesize Abbildung 3: Interface-Positionierung. Eigene Darstellung.}
+        \end{block}
+
+
+        
+        \begin{block}{8 Farbgestaltung}
+            \begin{itemize}
+                \item \textbf{Ambiente-Feedback:}
+                Farben können als indirekte soziale Signale dienen und den Kontext einer Antwort unterstützen.
+                \item \textbf{Kohärenz statt Realismus:}
+                Eine konsistente visuelle Umgebung kann Wahrnehmungsinkonsistenzen bei Avataren abmildern.
+                \item \textbf{Fokussteuerung:}
+                Dezente Farbkontraste helfen, die Aufmerksamkeit auf den Textbereich zu lenken und Ablenkung zu reduzieren.
+            \end{itemize}
+        \end{block}
+
+        
+
+        \begin{block}{9 Altersabhängige Designpräferenzen}
+            Designpräferenzen für Avatare variieren stark je nach Alter und Nutzer-Typ:
+            
+            \vspace{0.1cm}
+            \centering
+            
+            \includegraphics[width=0.4\linewidth]{Poster/Grafiik2-1.pdf}
+            \par\vspace{0.1cm}
+            \textit{\footnotesize Abbildung 4: Designpräferenzen. Eigene Darstellung.}
+        \end{block}
+
+        \vfill
+		
+		% 
+        \begin{block}{10 Evaluation und Fazit}
+            \begin{itemize}
+                \item Abhängigkeit von Kontext und Altersgruppe.
+                \item Der Uncanny-Valley-Effekt kann durch einen zu hohen Realitätsgrad auftreten
+                \item Avatare bieten in textbasierten Chats wenig Mehrwert, sind jedoch bei sprachbasierter Interaktion deutlich sinnvoller.
+            \end{itemize}
+        \end{block}
+
+        \vfill % Dehnt den Raum
+        
+        % --- REFERENZEN aus .bib Datei (kompakt) ---
+        {\tiny\color{gray}
+        \nocite{HerbstRothMerlau2026ChatbotInterfaces}
+        \printbibliography[heading=none]
+        }
+
+
+        \vspace{0cm}
+
+
+    \end{column}
+\end{columns}
+
+
+% Hier ist kein Footer-Code mehr nötig, das erledigt das Template automatisch.
+
+\end{frame}
+\end{document}s
