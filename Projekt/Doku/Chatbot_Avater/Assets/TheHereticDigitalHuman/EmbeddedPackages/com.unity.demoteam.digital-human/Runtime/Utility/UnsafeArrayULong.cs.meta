@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cafcb3cf105b4bc428fae8a9b437156c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human/Runtime/Utility/UnsafeArrayULong.cs
+  uploadId: 566121

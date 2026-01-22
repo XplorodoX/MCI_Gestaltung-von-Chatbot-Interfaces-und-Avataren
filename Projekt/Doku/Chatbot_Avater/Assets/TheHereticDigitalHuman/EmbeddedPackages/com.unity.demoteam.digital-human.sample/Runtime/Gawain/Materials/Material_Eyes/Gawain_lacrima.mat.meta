@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6662d9310c2023d418f26e97e81de210
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human.sample/Runtime/Gawain/Materials/Material_Eyes/Gawain_lacrima.mat
+  uploadId: 566121

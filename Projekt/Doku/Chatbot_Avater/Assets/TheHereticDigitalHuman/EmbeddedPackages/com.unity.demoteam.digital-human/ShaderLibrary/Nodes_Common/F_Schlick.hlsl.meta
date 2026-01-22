@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6fa9a6e462c895a4f9374ab9359a7f7d
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human/ShaderLibrary/Nodes_Common/F_Schlick.hlsl
+  uploadId: 566121

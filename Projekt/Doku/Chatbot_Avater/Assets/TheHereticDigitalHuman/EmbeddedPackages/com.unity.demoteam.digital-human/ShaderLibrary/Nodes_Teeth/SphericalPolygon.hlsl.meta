@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 722902b97c2a26d41a9d43cf012cb1c6
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human/ShaderLibrary/Nodes_Teeth/SphericalPolygon.hlsl
+  uploadId: 566121

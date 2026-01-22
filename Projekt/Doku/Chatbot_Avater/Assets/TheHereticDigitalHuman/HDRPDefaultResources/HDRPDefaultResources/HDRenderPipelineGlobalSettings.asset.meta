@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c62f3af2938e74b8395e8e6675f370ca
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/HDRPDefaultResources/HDRPDefaultResources/HDRenderPipelineGlobalSettings.asset
+  uploadId: 566121

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 10b387eb149ae1d44a3e9a1101d07cd3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Animation/Camera/Camera_FullShot_root.controller
+  uploadId: 566121

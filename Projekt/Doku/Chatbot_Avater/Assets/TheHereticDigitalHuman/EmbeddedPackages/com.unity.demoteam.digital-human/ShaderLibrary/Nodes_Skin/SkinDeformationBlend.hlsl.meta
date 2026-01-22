@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 44d298e460a0cc244ae044600c5647bb
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human/ShaderLibrary/Nodes_Skin/SkinDeformationBlend.hlsl
+  uploadId: 566121

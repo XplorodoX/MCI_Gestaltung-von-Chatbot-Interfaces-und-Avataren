@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 483d2efe3b6c29f41aced0ea368a5a2d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: '{"assetGUIDs":["","","","","","","","","","","","","","","",""]}'
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human.sample/Runtime/Gawain/Materials/DiffusionProfiles/Gawain_DiffusionProfile_Hair.asset
+  uploadId: 566121

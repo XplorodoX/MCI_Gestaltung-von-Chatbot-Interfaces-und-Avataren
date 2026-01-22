@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f0389c7620fbf4b4fb6d56ebabb9b743
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human/ShaderLibrary/Nodes_Common/LoadNormalBuffer.hlsl
+  uploadId: 566121

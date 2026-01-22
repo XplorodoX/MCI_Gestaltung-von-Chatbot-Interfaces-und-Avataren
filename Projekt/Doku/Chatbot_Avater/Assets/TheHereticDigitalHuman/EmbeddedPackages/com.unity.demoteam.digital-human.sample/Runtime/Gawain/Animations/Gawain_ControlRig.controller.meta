@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 872fd515cbf72324aad32c4a68400605
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human.sample/Runtime/Gawain/Animations/Gawain_ControlRig.controller
+  uploadId: 566121

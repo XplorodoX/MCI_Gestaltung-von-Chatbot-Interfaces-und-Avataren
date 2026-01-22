@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6fb6bd26d8f14eb45aebb48ab483d0d9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Prefabs/Button.prefab
+  uploadId: 566121

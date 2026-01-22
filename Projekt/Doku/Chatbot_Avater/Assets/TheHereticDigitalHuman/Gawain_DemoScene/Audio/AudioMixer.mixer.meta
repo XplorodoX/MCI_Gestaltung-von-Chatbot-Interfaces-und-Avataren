@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 620fa08a768d9404dba9c9a2c3d015cf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Audio/AudioMixer.mixer
+  uploadId: 566121

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f430d943acec4664388d12e0bbff46de
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.attributes/Runtime/Unity.DemoTeam.Attributes.asmdef
+  uploadId: 566121

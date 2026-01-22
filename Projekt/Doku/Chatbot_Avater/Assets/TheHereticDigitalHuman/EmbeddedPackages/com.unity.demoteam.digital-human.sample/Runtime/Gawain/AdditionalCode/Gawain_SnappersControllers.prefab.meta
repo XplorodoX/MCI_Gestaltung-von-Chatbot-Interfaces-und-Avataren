@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c588024d7d468c84d8d484f1943f2c22
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human.sample/Runtime/Gawain/AdditionalCode/Gawain_SnappersControllers.prefab
+  uploadId: 566121

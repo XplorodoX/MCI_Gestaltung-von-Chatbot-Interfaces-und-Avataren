@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5a259321a4569b04cbe0d01eecafc7aa
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.attributes/LICENSE.md
+  uploadId: 566121

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc465dd2d9c250c43bf45a7f4cdea9c4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human.sample/Runtime/Gawain/AdditionalCode/Gawain_SnappersHead.asset
+  uploadId: 566121

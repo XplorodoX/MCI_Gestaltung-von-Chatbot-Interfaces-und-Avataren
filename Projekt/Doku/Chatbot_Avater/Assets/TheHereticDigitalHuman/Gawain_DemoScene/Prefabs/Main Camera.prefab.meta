@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8070927d867a50f4f87787b5b0c6b4f8
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Prefabs/Main Camera.prefab
+  uploadId: 566121

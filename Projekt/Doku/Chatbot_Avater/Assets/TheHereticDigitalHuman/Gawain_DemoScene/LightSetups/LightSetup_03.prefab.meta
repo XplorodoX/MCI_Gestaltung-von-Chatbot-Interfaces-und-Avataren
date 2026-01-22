@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bf7f2fe7da76f9e4d8e7f5400856862d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/LightSetups/LightSetup_03.prefab
+  uploadId: 566121

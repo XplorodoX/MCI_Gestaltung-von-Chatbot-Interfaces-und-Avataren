@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 18054cfd3c435b54abc30f68a0e195ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Profiles/Post Processing
+    Profile.asset
+  uploadId: 566121

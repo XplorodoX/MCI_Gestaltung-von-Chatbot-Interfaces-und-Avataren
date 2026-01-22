@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e6d550a8baa807d4b9957ccfb7b30b1c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Profiles/Disable DOF
+    Profile.asset
+  uploadId: 566121

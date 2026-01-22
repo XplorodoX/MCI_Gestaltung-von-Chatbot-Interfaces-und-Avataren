@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: af3106ed603d0234bb8eb4d60e695012
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/Gawain_DemoScene/Prefabs/InteractionUI.prefab
+  uploadId: 566121

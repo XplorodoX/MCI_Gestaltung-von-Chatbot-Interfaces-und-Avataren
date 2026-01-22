@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97acede896fa2634283eac38a9f57877
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 168620
+  packageName: 'The Heretic: Digital Human | HDRP'
+  packageVersion: 2021.3.0
+  assetPath: Assets/TheHereticDigitalHuman/EmbeddedPackages/com.unity.demoteam.digital-human.sample/Runtime/Gawain/Materials/Material_Body/Gawain_Gauntlet_skin.mat
+  uploadId: 566121
